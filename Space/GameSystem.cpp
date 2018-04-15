@@ -7,41 +7,50 @@
 //
 #include <stdexcept>
 #include <iostream>
+#include <SDL2/SDL.h>
 
 #include "GameSystem.h"
 #include "EventSystem.h"
-
-
-GameSystem *GameSystem::instance;
-
-GameSystem *GameSystem::getInstance(){
- 
-    if (GameSystem::instance == nullptr){
-        GameSystem::instance  = new GameSystem();
-    }
-    if (GameSystem::instance == nullptr){
-        throw std::runtime_error("could not initialize game system");
-    }
-    
-    return GameSystem::instance;
-}
+#include "RenderSystem.h"
 
 GameSystem::GameSystem(){
+    std::cout << "Starting Game system"<<std::endl;
     //initialize subsystems
     current_mode = GAMEMODE_MENU;
-    
+    renderer = new RenderSystem();
+    event_system = new EventSystem();
+    event_system->attachListener(this,"quit");
+    input_system = new InputSystem(event_system);
+    renderer->setupEvents(event_system);
+    quit = false;
     
 }
 
-void GameSystem::setEventSystem(EventSystem *e){
-    std::cout << "[GameSystem] adding event system" << std::endl;
-    event_system = e;
-    e->attachListener(this,"should_receive");
+void GameSystem::runLoop(){
+    
+    
+    //todo: put events into the input system
+    while (!quit){
+        input_system->pollAndTriggerEvents();
+        renderer->render(current_mode);
+    }
+
 }
 
 void GameSystem::receiveEvent(Event *event){
 
     if(event->event_name=="quit"){
-            
+        printf("quit event received\n");
+        quit = true;
     }
+}
+
+std::string GameSystem::getConfigSetting(std::string setting_name){
+    return "";
+}
+
+void GameSystem::initiateShutdown(){
+    current_mode = GAMEMODE_SHUTTING_DOWN;
+
+    delete renderer;
 }

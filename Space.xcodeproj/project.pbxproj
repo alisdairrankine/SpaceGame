@@ -10,8 +10,16 @@
 		414AB8EC1C078690006C661B /* RenderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 414AB8EB1C078690006C661B /* RenderSystem.cpp */; };
 		414AB8EF1C078720006C661B /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 414AB8ED1C078720006C661B /* GameSystem.cpp */; };
 		414AB8F31C078A3C006C661B /* EventSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 414AB8F11C078A3C006C661B /* EventSystem.cpp */; };
+		416398A31C0B450900DE29E0 /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 416398A11C0B450900DE29E0 /* Window.cpp */; };
+		416398A61C0B533300DE29E0 /* Widget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 416398A41C0B533300DE29E0 /* Widget.cpp */; };
 		417F8FB41C04ECB5005B50B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 417F8FB31C04ECB5005B50B8 /* main.cpp */; };
 		417F8FBB1C04ECEC005B50B8 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417F8FBA1C04ECEC005B50B8 /* SDL2.framework */; };
+		4198508B1C08AF3700AF6807 /* MenuRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 419850891C08AF3700AF6807 /* MenuRenderer.cpp */; };
+		4198508F1C08B45C00AF6807 /* InputSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4198508D1C08B45C00AF6807 /* InputSystem.cpp */; };
+		419850911C08BAA100AF6807 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419850901C08BAA100AF6807 /* SDL2_ttf.framework */; };
+		41C30A631C0F474E003BA541 /* WorldRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C30A611C0F474E003BA541 /* WorldRenderer.cpp */; };
+		41C30A671C0F4834003BA541 /* WorldState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C30A651C0F4834003BA541 /* WorldState.cpp */; };
+		41C30A6A1C0F499A003BA541 /* Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 41C30A681C0F499A003BA541 /* Sprite.cpp */; };
 		41F574FA1C077CE900E64A65 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F574F91C077CE900E64A65 /* SDL2_image.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +42,25 @@
 		414AB8EE1C078720006C661B /* GameSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSystem.h; sourceTree = "<group>"; };
 		414AB8F11C078A3C006C661B /* EventSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventSystem.cpp; sourceTree = "<group>"; };
 		414AB8F21C078A3C006C661B /* EventSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventSystem.h; sourceTree = "<group>"; };
+		416398A11C0B450900DE29E0 /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		416398A21C0B450900DE29E0 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		416398A41C0B533300DE29E0 /* Widget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Widget.cpp; sourceTree = "<group>"; };
+		416398A51C0B533300DE29E0 /* Widget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Widget.h; sourceTree = "<group>"; };
 		417F8FB01C04ECB5005B50B8 /* Space */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Space; sourceTree = BUILT_PRODUCTS_DIR; };
 		417F8FB31C04ECB5005B50B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		417F8FBA1C04ECEC005B50B8 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		419850891C08AF3700AF6807 /* MenuRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuRenderer.cpp; sourceTree = "<group>"; };
+		4198508A1C08AF3700AF6807 /* MenuRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuRenderer.h; sourceTree = "<group>"; };
+		4198508C1C08B34A00AF6807 /* GameMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameMode.h; sourceTree = "<group>"; };
+		4198508D1C08B45C00AF6807 /* InputSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputSystem.cpp; sourceTree = "<group>"; };
+		4198508E1C08B45C00AF6807 /* InputSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputSystem.h; sourceTree = "<group>"; };
+		419850901C08BAA100AF6807 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		41C30A611C0F474E003BA541 /* WorldRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldRenderer.cpp; sourceTree = "<group>"; };
+		41C30A621C0F474E003BA541 /* WorldRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldRenderer.h; sourceTree = "<group>"; };
+		41C30A651C0F4834003BA541 /* WorldState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldState.cpp; sourceTree = "<group>"; };
+		41C30A661C0F4834003BA541 /* WorldState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldState.h; sourceTree = "<group>"; };
+		41C30A681C0F499A003BA541 /* Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sprite.cpp; sourceTree = "<group>"; };
+		41C30A691C0F499A003BA541 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		41F574F91C077CE900E64A65 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				419850911C08BAA100AF6807 /* SDL2_ttf.framework in Frameworks */,
 				41F574FA1C077CE900E64A65 /* SDL2_image.framework in Frameworks */,
 				417F8FBB1C04ECEC005B50B8 /* SDL2.framework in Frameworks */,
 			);
@@ -53,10 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4119957A1C09543D003F5042 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				419850891C08AF3700AF6807 /* MenuRenderer.cpp */,
+				4198508A1C08AF3700AF6807 /* MenuRenderer.h */,
+				416398A71C0B550300DE29E0 /* Widgets */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
 		412CD98F1C0779F700AB43CE /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				417F8FB31C04ECB5005B50B8 /* main.cpp */,
+				41D533B91C07E8B70043B69C /* Renderer */,
+				41C30A641C0F481F003BA541 /* State */,
 				414AB8F01C078737006C661B /* System */,
 			);
 			name = Source;
@@ -71,13 +108,27 @@
 				414AB8ED1C078720006C661B /* GameSystem.cpp */,
 				414AB8F21C078A3C006C661B /* EventSystem.h */,
 				414AB8F11C078A3C006C661B /* EventSystem.cpp */,
+				4198508E1C08B45C00AF6807 /* InputSystem.h */,
+				4198508D1C08B45C00AF6807 /* InputSystem.cpp */,
 			);
 			name = System;
+			sourceTree = "<group>";
+		};
+		416398A71C0B550300DE29E0 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				416398A11C0B450900DE29E0 /* Window.cpp */,
+				416398A21C0B450900DE29E0 /* Window.h */,
+				416398A41C0B533300DE29E0 /* Widget.cpp */,
+				416398A51C0B533300DE29E0 /* Widget.h */,
+			);
+			name = Widgets;
 			sourceTree = "<group>";
 		};
 		417F8FA71C04ECB5005B50B8 = {
 			isa = PBXGroup;
 			children = (
+				419850901C08BAA100AF6807 /* SDL2_ttf.framework */,
 				41F574F91C077CE900E64A65 /* SDL2_image.framework */,
 				417F8FBA1C04ECEC005B50B8 /* SDL2.framework */,
 				417F8FB21C04ECB5005B50B8 /* Space */,
@@ -99,6 +150,44 @@
 				412CD98F1C0779F700AB43CE /* Source */,
 			);
 			path = Space;
+			sourceTree = "<group>";
+		};
+		41C30A5D1C0F46ED003BA541 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				41C30A611C0F474E003BA541 /* WorldRenderer.cpp */,
+				41C30A621C0F474E003BA541 /* WorldRenderer.h */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		41C30A641C0F481F003BA541 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4198508C1C08B34A00AF6807 /* GameMode.h */,
+				41C30A651C0F4834003BA541 /* WorldState.cpp */,
+				41C30A661C0F4834003BA541 /* WorldState.h */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		41C30A6B1C0F49B8003BA541 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				41C30A681C0F499A003BA541 /* Sprite.cpp */,
+				41C30A691C0F499A003BA541 /* Sprite.h */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		41D533B91C07E8B70043B69C /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				41C30A6B1C0F49B8003BA541 /* Base */,
+				41C30A5D1C0F46ED003BA541 /* Game */,
+				4119957A1C09543D003F5042 /* Menu */,
+			);
+			name = Renderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,10 +246,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416398A31C0B450900DE29E0 /* Window.cpp in Sources */,
+				41C30A631C0F474E003BA541 /* WorldRenderer.cpp in Sources */,
+				4198508B1C08AF3700AF6807 /* MenuRenderer.cpp in Sources */,
+				4198508F1C08B45C00AF6807 /* InputSystem.cpp in Sources */,
 				414AB8EF1C078720006C661B /* GameSystem.cpp in Sources */,
 				414AB8EC1C078690006C661B /* RenderSystem.cpp in Sources */,
+				41C30A6A1C0F499A003BA541 /* Sprite.cpp in Sources */,
 				417F8FB41C04ECB5005B50B8 /* main.cpp in Sources */,
 				414AB8F31C078A3C006C661B /* EventSystem.cpp in Sources */,
+				41C30A671C0F4834003BA541 /* WorldState.cpp in Sources */,
+				416398A61C0B533300DE29E0 /* Widget.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +302,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "The Hunt For Yellow November";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -242,6 +339,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "The Hunt For Yellow November";
 				SDKROOT = macosx;
 			};
 			name = Release;

@@ -12,10 +12,11 @@
 #include <string>
 #include <map>
 #include <vector>
+#include <SDL2/SDL.h>
 
 typedef struct Event {
     std::string event_name;
-    std::string event_data;
+    SDL_Event raw_event;
 } Event;
 
 class EventListener{

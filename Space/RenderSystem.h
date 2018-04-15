@@ -9,9 +9,29 @@
 #ifndef RenderSystem_h
 #define RenderSystem_h
 
-class RenderSystem{
+#include <SDL2/SDL.h>
+#include <SDL2_ttf/SDL_ttf.h>
+#include "MenuRenderer.h"
+#include "EventSystem.h"
+#include "GameMode.h"
+#include <vector>
+
+class RenderSystem:EventListener{
 public:
-    void render();
+    void render(GameMode game_mode);
+    RenderSystem();
+    ~RenderSystem();
+    double calculateFrameRate();
+    void setupEvents(EventSystem *es);
+    virtual void receiveEvent(Event *e);
+    
+private:
+    SDL_Window *window;
+    SDL_Renderer *sdl_renderer;
+    MenuRenderer *menu_renderer;
+    std::vector<Uint32> frame_rate_sample;
+    bool cap_fps = false;
+
 };
 
 
